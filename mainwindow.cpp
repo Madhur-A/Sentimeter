@@ -3,7 +3,6 @@
 
 
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
 #include <QLayout>
 #include <QPushButton>
 #include <QTextBrowser>
@@ -12,9 +11,7 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
     QWidget *centralWidget = new QWidget(this);
     setCentralWidget(centralWidget);
     setWindowTitle("Sentimeter");
@@ -56,6 +53,5 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    delete ui;
 }
 
