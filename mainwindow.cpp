@@ -3,11 +3,7 @@
 
 
 #include "mainwindow.h"
-#include <QLayout>
-#include <QPushButton>
-#include <QTextBrowser>
-#include <QLineEdit>
-#include <QObject>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
